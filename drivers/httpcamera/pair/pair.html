@@ -1,0 +1,39 @@
+</br>
+<p data-i18n="pair.intro"></p>
+
+<form id="form" name="form" onsubmit="return getForm()" action="javascript:void(0);" method="post" style="text-align:left;">
+    <div class="form-group">
+        <label for="camera_url" data-i18n="pair.camera_url"></label>
+        <input type="text" name="camera_url" id="camera_url" style="margin-top: 3px;" />
+        </br>
+        <label for="username" data-i18n="pair.username"></label>
+        <input type="text" name="username" id="username" />
+        </br>
+        <label for="password" data-i18n="pair.password"></label>
+        <input type="password" name="password" id="password" style="margin-top: 3px;" />
+        </br>
+        <input type="submit" id="submit" value="Save" style="margin: 15px; padding: 10px; text-align:center; color: white; background-color: DodgerBlue;border-radius: 10px" />
+    </div>
+</form>
+
+
+<script type="text/javascript">
+    Homey.setTitle(__('pair.title'));
+    function getForm() {
+      Homey.createDevice({
+        name: 'Camera',
+        data: {
+          url: document.forms["form"]["camera_url"].value,
+        },
+        settings: {
+          url: document.forms["form"]["camera_url"].value,
+          username: document.forms["form"]["username"].value,
+          password: document.forms["form"]["password"].value,
+        }
+      }).then(function(result) {
+        Homey.done();
+      }).catch(function(err) {
+        Homey.alert(err);
+      });
+    }
+</script>

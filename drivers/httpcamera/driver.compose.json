@@ -1,0 +1,43 @@
+{
+  "name": {
+    "en": "HTTPCamera"
+  },
+  "class": "camera",
+  "capabilities": [],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [],
+  "settings": [
+    {
+      "id": "url",
+      "type": "text",
+      "label": {
+        "en": "URL"
+      }
+    },
+    {
+      "id": "username",
+      "type": "text",
+      "label": {
+        "en": "Username"
+      }
+    },
+    {
+      "id": "password",
+      "type": "password",
+      "label": {
+        "en": "Password"
+      }
+    }
+  ],
+  "pair": [
+    {
+      "id": "pair"
+    }
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png"
+  }
+}

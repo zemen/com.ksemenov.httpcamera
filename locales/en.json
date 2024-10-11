@@ -1,0 +1,9 @@
+{
+  "pair": {
+    "title": "Add Camera",
+    "intro": "Please enter URL, username and password of the camera",
+    "camera_url": "Camera URL",
+    "username": "Username",
+    "password": "Password"
+  }
+}
