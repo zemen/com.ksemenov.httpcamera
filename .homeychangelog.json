@@ -1,0 +1,23 @@
+{
+  "1.0.1": {
+    "en": "Introduced HTTP camera with digest auth"
+  },
+  "1.0.2": {
+    "en": "Fix bug"
+  },
+  "1.0.3": {
+    "en": "Fix bug"
+  },
+  "1.1.0": {
+    "en": "Rework set image"
+  },
+  "1.1.1": {
+    "en": "Fix bug"
+  },
+  "2.0.0": {
+    "en": "Fixed production build"
+  },
+  "2.1.0": {
+    "en": "Updated icons"
+  }
+}
